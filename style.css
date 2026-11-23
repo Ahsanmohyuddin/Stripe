@@ -218,7 +218,7 @@ button {
 
 #banner {
     position: relative;
-    max-width: 1200px;
+    max-width: 1140px;
     min-height: 360px;
     margin: 3rem auto;
     padding: 3rem;
@@ -258,7 +258,83 @@ button {
     position: absolute;
     bottom: 1.25rem;
     right: 1.5rem;
-    font-size: 24pt;
+    font-size: 18pt;
     font-weight: bold;
     color: rgb(255, 255, 255);
+}
+
+
+#cost {
+    max-width: 1140px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+/* 1. Center Heading Text */
+.center-text {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #0a2540;
+    margin-bottom: 2.5rem;
+}
+
+/* 2. 4 Boxes in the Same Line */
+.container-four {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.mini-box {
+    background-color: #f6f9fc;
+    border: 1px solid #e6ebf1;
+    border-left: 3px solid #635bff; /* Classic Stripe purple accent bar */
+    border-radius: 10px;
+    padding: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0a2540;
+    text-align: left;
+}
+
+/* 3. Image Below the 4 Boxes */
+.cost-image {
+    margin-bottom: 2rem;
+}
+
+.cost-image img {
+    display: block;
+    width: 100%;
+    max-height: 460px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* 4. Left-Aligned Outro Text */
+.left-outro {
+    text-align: left;
+    max-width: 680px;
+}
+
+.left-outro h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #425466;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .container-four {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .container-four {
+        grid-template-columns: 1fr;
+    }
 }
