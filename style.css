@@ -24,8 +24,8 @@ body {
 .nav-part-1 {
     display: flex;
     align-items: center;
-    width: 60;
-    height: 25;
+    width: 60px;
+    height: 25px;
 }
 
 .nav-part-2 {
@@ -69,7 +69,7 @@ button {
 .btn1 {
     background-color: rgba(10, 37, 64, 0.06);
     color: #0a2540;
-    margin-left: 15.88rem;
+    margin-left: auto;
 }
 
 .btn1:hover {
@@ -121,7 +121,7 @@ button {
     margin-bottom: 2rem;
 }
 
-#features h2{
+#features h2 {
     max-width: 900px;
     margin: 4rem auto;
     padding: 0 1.5rem;
@@ -187,6 +187,7 @@ button {
 
 /* Responsive layout */
 @media (max-width: 700px) {
+
     .first-row,
     .second-row {
         grid-template-columns: 1fr;
@@ -196,12 +197,17 @@ button {
 
 #prodRecs {
     max-width: 950px;
-    margin: 3rem auto;          /* Centers the box horizontally */
-    padding: 2.5rem 2.5rem;      /* Space inside the background box */
-    background-color: #f6f9fc; /* Soft light background box */
-    border: 1px solid #5d5b5b; /* Subtle border to clearly see the edges */
+    margin: 3rem auto;
+    /* Centers the box horizontally */
+    padding: 2.5rem 2.5rem;
+    /* Space inside the background box */
+    background-color: #f6f9fc;
+    /* Soft light background box */
+    border: 1px solid #5d5b5b;
+    /* Subtle border to clearly see the edges */
     border-radius: 16px;
-    text-align: center;        /* Centers the heading and paragraph text */
+    text-align: center;
+    /* Centers the heading and paragraph text */
 }
 
 #prodRecs h2 {
@@ -224,7 +230,7 @@ button {
     padding: 3rem;
     border-radius: 8px;
     overflow: hidden;
-    background-image:url("images/banner.webp");
+    background-image: url("images/banner.webp");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -291,8 +297,10 @@ button {
 .mini-box {
     background-color: #f6f9fc;
     border: 1px solid #e6ebf1;
-    border-top: 3px solid #635bff; /* Classic Stripe purple accent bar */
-    border-bottom: 3px solid #635bff; /* Classic Stripe purple accent bar */
+    border-top: 3px solid #635bff;
+    /* Classic Stripe purple accent bar */
+    border-bottom: 3px solid #635bff;
+    /* Classic Stripe purple accent bar */
     border-radius: 10px;
     padding: 1.5rem;
     font-size: 1.75rem;
@@ -302,15 +310,15 @@ button {
 }
 
 .mini-box h4 {
-   font-size: 24pt;
-   font-weight: bold;
-text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
+    text-align: center;
 }
 
 .mini-box p {
-      font-size: 12pt;
-   font-weight: lighter;
-   text-align: center;
+    font-size: 12pt;
+    font-weight: lighter;
+    text-align: center;
 }
 
 /* 3. Image Below the 4 Boxes */
@@ -354,7 +362,8 @@ text-align: center;
 
 
 .intro {
-    max-width: auto;
+    max-width: 1140px;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -362,13 +371,13 @@ text-align: center;
     padding: 50px;
 }
 
-.intro-left,
-.intro-right {
+.left-intro,
+.right-intro {
     flex: 1;
 }
 
 .strip-btn {
-    
+    margin-top: 20px;
     color: white;
     border-radius: 5px;
     padding: 15px;
@@ -388,7 +397,7 @@ text-align: center;
 
 .img-btn {
     border: 2px solid black;
-   
+
     color: #615dbc;
     border-radius: 5px;
     padding: 15px;
@@ -396,47 +405,137 @@ text-align: center;
 }
 
 
-.image-section{
+.image-section {
+    max-width: 1140px;
+    margin: 0 auto;
     padding: 40px;
 
 }
 
 .main-image {
     text-align: center;
-    
-  }
-  
-  .main-image img {
+
+}
+
+.main-image img {
     border-radius: 13px;
     max-width: 1240px;
     max-height: 900px;
     width: 100%;
-  }
+}
 
-.image-names{
-margin-top: 10px;
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- text-align: center;
-gap: 20px;
-  }
-
-  .information {
+.image-names {
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    text-align: center;
     gap: 20px;
-    padding: 40px;
+}
+
+.information {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 30px 1.5rem;
     border-top: 1px solid #ddd;
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    /* Stacks <p> and <button> vertically */
+    align-items: flex-start;
+    /* Keeps button at its natural width instead of stretching full width */
     padding: 25px;
     border: 1px solid #ddd;
     border-radius: 12px;
 }
 
-.btn-card{
-    margin-top: 20px;
+.card p {
+    margin-bottom: 20px;
+    /* Keeps spacing even when a paragraph grows */
+}
+
+.btn-card {
+    margin-top: auto;
+    /* Absorbs extra vertical space and pins the button to the bottom */
     background-color: white;
     color: #615dbc;
+    padding: 0;
+    /* Optional: removes extra left/right padding if you want text-link alignment */
+}
+
+.review{
+    text-align: center;
+    margin: 20px;
+}
+
+.review p{
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px;
+}
+
+.image-review img{
+    width: 50px;
+
+}
+/* What’s happening — See the latest from Stripe */
+.image-sec {
+    background-color: #ffffff;
+    max-width: 1140px;
+    margin: 3rem auto;
+    padding: 2.5rem 2rem;
+    border-radius: 14px;
+    }
+
+.image-head {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.image-head h3 {
+    color: black;
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.main-img img {
+    display: block;
+    width: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.image-p {
+    margin-top: 1.25rem;
+    max-width: 760px;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.92);
+}
+
+@media (max-width: 700px) {
+    .image-sec {
+        padding: 1.75rem 1.25rem;
+        border-radius: 10px;
+    }
+
+    .image-head h3 {
+        font-size: 2.4rem;
+    }
+
+    .main-img img {
+        max-height: 320px;
+    }
 }
