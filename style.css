@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #0a2540;
+    line-height: 1.5;
+}
+
+.nav {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-part-1 {
+    display: flex;
+    align-items: center;
+    width: 60;
+    height: 25;
+}
+
+.nav-part-2 {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.nav-part-2 ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 1.25rem;
+}
+
+.nav-part-2 ul a {
+    text-decoration: none;
+    color: #0a2540;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-part-2 ul a:hover {
+    color: #635bff;
+}
+
+
+button {
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0.55rem 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn1 {
+    background-color: rgba(10, 37, 64, 0.06);
+    color: #0a2540;
+    margin-left: 15.88rem;
+}
+
+.btn1:hover {
+    background-color: rgba(10, 37, 64, 0.12);
+}
+
+.btn2,
+.btn3 {
+    background-color: #635bff;
+    color: #ffffff;
+}
+
+.btn2:hover,
+.btn3:hover {
+    background-color: #0a2540;
+}
+
+.btn4 {
+    background-color: #f6f9fc;
+    color: #0a2540;
+    border: 1px solid #e2e8f0;
+    margin-left: 0.5rem;
+}
+
+.btn4:hover {
+    background-color: #eef2f6;
+}
+
+
+#hero {
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+}
+
+#hero p:first-child {
+    font-size: 11pt;
+    font-weight: 600;
+    color: #425466;
+    margin-bottom: 1rem;
+}
+
+#hero h1 {
+    font-weight: 400;
+    font-size: 26pt;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: #0a2540;
+    margin-bottom: 2rem;
+}
+
+#features h2{
+    max-width: 900px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+    font-weight: 400;
+    font-size: 17pt;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #0a2540;
+    margin-bottom: 2rem;
+}
