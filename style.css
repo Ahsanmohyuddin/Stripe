@@ -192,3 +192,25 @@ button {
         grid-template-columns: 1fr;
     }
 }
+
+
+#prodRecs {
+    max-width: 950px;
+    margin: 3rem auto;          /* Centers the box horizontally */
+    padding: 2.5rem 2.5rem;      /* Space inside the background box */
+    background-color: #f6f9fc; /* Soft light background box */
+    border: 1px solid #5d5b5b; /* Subtle border to clearly see the edges */
+    border-radius: 16px;
+    text-align: center;        /* Centers the heading and paragraph text */
+}
+
+#prodRecs h2 {
+    color: #0a2540;
+    font-size: 18pt;
+    margin-bottom: 0.75rem;
+}
+
+#prodRecs p {
+    color: #425466;
+    font-size: 14pt;
+}
