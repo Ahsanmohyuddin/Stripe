@@ -598,3 +598,107 @@ button {
         max-width: 300px;
     }
 }
+
+/* Ready to get started — CTA Banner */
+.review {
+    max-width: 1140px;
+    margin: 4rem auto 3rem;
+    padding: 3rem 1.5rem;
+    border-top: 1px solid #e6ebf1;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2.5rem;
+    text-align: left;
+}
+
+/* Left primary CTA block gets slightly more space */
+.review .start {
+    flex: 1.5;
+}
+
+.review .start h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0a2540;
+    margin-bottom: 0.75rem;
+}
+
+.review .start p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #425466;
+    margin-bottom: 1.5rem;
+}
+
+/* Two secondary columns on the right */
+.review .second {
+    flex: 1;
+    border-left: 1px solid #e6ebf1;
+    padding-left: 1.5rem;
+}
+
+.review h3 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #0a2540;
+    margin-bottom: 0.5rem;
+}
+
+.review .second p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #425466;
+    margin-bottom: 1rem;
+}
+
+/* Buttons inside .review */
+.btn-first {
+    background-color: #635bff;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 0.6rem 1.2rem;
+}
+
+.btn-first:hover {
+    background-color: #0a2540;
+}
+
+.btn-last {
+    background-color: transparent;
+    color: #635bff;
+    padding: 0.6rem 1rem;
+    margin-left: 0.25rem;
+}
+
+.btn-last:hover {
+    color: #0a2540;
+}
+
+.btn-third {
+    background-color: transparent;
+    color: #635bff;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.btn-third:hover {
+    color: #0a2540;
+}
+
+/* Stack cleanly on tablets and mobile */
+@media (max-width: 850px) {
+    .review {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .review .second {
+        border-left: none;
+        border-top: 1px solid #e6ebf1;
+        padding-left: 0;
+        padding-top: 1.5rem;
+        width: 100%;
+    }
+}
