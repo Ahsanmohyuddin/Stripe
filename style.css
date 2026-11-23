@@ -291,7 +291,8 @@ button {
 .mini-box {
     background-color: #f6f9fc;
     border: 1px solid #e6ebf1;
-    border-left: 3px solid #635bff; /* Classic Stripe purple accent bar */
+    border-top: 3px solid #635bff; /* Classic Stripe purple accent bar */
+    border-bottom: 3px solid #635bff; /* Classic Stripe purple accent bar */
     border-radius: 10px;
     padding: 1.5rem;
     font-size: 1.75rem;
@@ -300,9 +301,21 @@ button {
     text-align: left;
 }
 
+.mini-box h4 {
+   font-size: 24pt;
+   font-weight: bold;
+text-align: center;
+}
+
+.mini-box p {
+      font-size: 12pt;
+   font-weight: lighter;
+   text-align: center;
+}
+
 /* 3. Image Below the 4 Boxes */
 .cost-image {
-    margin-bottom: 2rem;
+    margin-bottom: 100px;
 }
 
 .cost-image img {
@@ -320,7 +333,7 @@ button {
 }
 
 .left-outro h3 {
-    font-size: 1.25rem;
+    font-size: 20pt;
     font-weight: 500;
     line-height: 1.5;
     color: #425466;
