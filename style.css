@@ -552,6 +552,7 @@ button {
     margin: 0 auto ;
     margin-bottom: 20px;
     color: #000000;
+    font-size: 2rem;
 }
 
 .book-content {
@@ -573,10 +574,9 @@ button {
 }
 
 .book-image img {
-    width: 100%;
-    max-width: 340px;
+    width: 600px;
     height: auto;
-}
+    }
 
 .book-descrip {
     flex: 1;
