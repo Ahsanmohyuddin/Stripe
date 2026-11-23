@@ -482,6 +482,7 @@ button {
     width: 50px;
 
 }
+
 /* What’s happening — See the latest from Stripe */
 .image-sec {
     background-color: #ffffff;
@@ -537,5 +538,63 @@ button {
 
     .main-img img {
         max-height: 320px;
+    }
+}
+
+/* Hard Landing: The Epic Contest for Power and Profits That Plunged the Airlines Into Chaos */
+
+.book-section {
+    padding: 2rem 0.5rem;
+}
+
+.book-section h3 {
+    max-width: 1140px;
+    margin: 0 auto ;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.book-content {
+    display: flex;
+    align-items: center;
+    max-width: 1140px;
+    margin: auto;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.book-image {
+    flex: 0 0 40%;
+    padding: 2rem;
+    background: #ffffff;
+    text-align: center;
+}
+
+.book-image img {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+}
+
+.book-descrip {
+    flex: 1;
+    padding: 2rem;
+}
+
+.book-descrip p {
+    line-height: 1.7;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .book-content {
+        flex-direction: column;
+    }
+
+    .book-image img {
+        max-width: 300px;
     }
 }
