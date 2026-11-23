@@ -599,106 +599,273 @@ button {
     }
 }
 
-/* Ready to get started — CTA Banner */
+
+/* CTA Section */
 .review {
     max-width: 1140px;
     margin: 4rem auto 3rem;
     padding: 3rem 1.5rem;
     border-top: 1px solid #e6ebf1;
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
     gap: 2.5rem;
-    text-align: left;
 }
 
-/* Left primary CTA block gets slightly more space */
-.review .start {
+/* Columns */
+.start {
     flex: 1.5;
 }
 
-.review .start h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #0a2540;
-    margin-bottom: 0.75rem;
-}
-
-.review .start p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #425466;
-    margin-bottom: 1.5rem;
-}
-
-/* Two secondary columns on the right */
-.review .second {
+.second {
     flex: 1;
     border-left: 1px solid #e6ebf1;
     padding-left: 1.5rem;
 }
 
+/* Headings */
 .review h3 {
-    font-size: 1.15rem;
-    font-weight: 600;
-    line-height: 1.35;
     color: #0a2540;
-    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
 }
 
-.review .second p {
-    font-size: 0.95rem;
-    line-height: 1.55;
+/* Paragraphs */
+.review p {
     color: #425466;
+    font-size: 0.95rem;
+    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-/* Buttons inside .review */
-.btn-first {
-    background-color: #635bff;
-    color: #ffffff;
-    border-radius: 999px;
-    padding: 0.6rem 1.2rem;
-}
-
-.btn-first:hover {
-    background-color: #0a2540;
-}
-
-.btn-last {
-    background-color: transparent;
-    color: #635bff;
+/* Buttons */
+.review button {
+    border: none;
+    cursor: pointer;
     padding: 0.6rem 1rem;
-    margin-left: 0.25rem;
-}
-
-.btn-last:hover {
-    color: #0a2540;
-}
-
-.btn-third {
-    background-color: transparent;
+    background: transparent;
     color: #635bff;
-    padding: 0;
-    font-size: 0.95rem;
 }
 
-.btn-third:hover {
+.review .btn-first {
+    background: #635bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.review .btn-last {
+    background: #ffffff;
+    color: #635bff;
+    border-radius: 5px;
+    border: 1px solid #302d2d;   
+}
+
+
+.review button:hover {
     color: #0a2540;
 }
 
-/* Stack cleanly on tablets and mobile */
+.review .btn-first:hover {
+    background: #0a2540;
+    color: white;
+}
+
+/* Responsive */
 @media (max-width: 850px) {
     .review {
         flex-direction: column;
-        gap: 2rem;
     }
 
-    .review .second {
+    .second {
         border-left: none;
         border-top: 1px solid #e6ebf1;
-        padding-left: 0;
-        padding-top: 1.5rem;
-        width: 100%;
+        padding: 1.5rem 0 0;
+    }
+}
+
+
+/* Site Footer */
+.footer {
+    background-color: #f6f9fc;
+    border-top: 1px solid #e6ebf1;
+    padding: 4rem 1.5rem 3rem;
+    color: #425466;
+}
+
+.footer-container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* 4-Column Link Grid */
+.footer-links-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-links-block {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+}
+
+.footer-links-block h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #0a2540;
+    margin-bottom: 0.25rem;
+}
+
+.footer-links-block a,
+.footer-phone {
+    font-size: 0.875rem;
+    line-height: 1.45;
+    color: #425466;
+    text-decoration: none;
+}
+
+.footer-links-block a:hover {
+    color: #0a2540;
+}
+
+.footer-links-block .footer-signin {
+    font-weight: 600;
+    color: #0a2540;
+}
+
+.footer-links-block .footer-signin:hover {
+    color: #635bff;
+}
+
+/* Newsletter Section */
+.footer-newsletter {
+    border-top: 1px solid #e6ebf1;
+    border-bottom: 1px solid #e6ebf1;
+    padding: 2rem 0;
+}
+
+.newsletter-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.newsletter-row label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #0a2540;
+}
+
+.newsletter-input-group {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 0.25rem;
+    width: 100%;
+    max-width: 420px;
+}
+
+.newsletter-input-group input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 0.55rem 0.75rem;
+    font-size: 0.9rem;
+    color: #0a2540;
+    background: transparent;
+}
+
+.newsletter-input-group button {
+    background-color: #635bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.55rem 1rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.newsletter-input-group button:hover {
+    background-color: #0a2540;
+}
+
+.newsletter-consent {
+    margin-top: 0.85rem;
+    font-size: 0.78rem;
+    line-height: 1.5;
+    color: #64748b;
+    max-width: 720px;
+}
+
+.newsletter-consent a {
+    color: #425466;
+    text-decoration: underline;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+}
+
+.footer-bottom-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.locale-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: transparent;
+    border: none;
+    padding: 0;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #0a2540;
+    cursor: pointer;
+}
+
+.locale-btn:hover {
+    color: #635bff;
+}
+
+.footer-copyright {
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 900px) {
+    .footer-links-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 540px) {
+    .footer-links-section {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
