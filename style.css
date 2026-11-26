@@ -70,10 +70,12 @@ button {
     background-color: white;
     color: orange;
     margin-left: auto;
+  border: 1px solid black;
 }
 
 .btn1:hover {
-    background-color: lightblue;
+    background-color: white;
+    border: 0.5px solid black;
 }
 
 .btn2,
@@ -84,7 +86,8 @@ button {
 
 .btn2:hover,
 .btn3:hover {
-    background-color: #0a2540;
+    background-color: white;
+    border: 0.5px solid black;
 }
 
 .btn4 {
