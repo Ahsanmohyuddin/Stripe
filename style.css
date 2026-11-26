@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background-color: mediumorchid;
 }
 
 body {
@@ -301,10 +300,6 @@ button {
 .mini-box {
     background-color: #f6f9fc;
     border: 1px solid #e6ebf1;
-    border-top: 3px solid #635bff;
-    /* Classic Stripe purple accent bar */
-    border-bottom: 3px solid #635bff;
-    /* Classic Stripe purple accent bar */
     border-radius: 10px;
     padding: 1.5rem;
     font-size: 1.75rem;
@@ -313,11 +308,6 @@ button {
     text-align: left;
 }
 
-.mini-box h4 {
-    font-size: 24pt;
-    font-weight: bold;
-    text-align: center;
-}
 
 .mini-box p {
     font-size: 12pt;
