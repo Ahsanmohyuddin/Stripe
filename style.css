@@ -433,7 +433,6 @@ button {
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
     padding: 30px 1.5rem;
-    border-top: 1px solid #ddd;
 }
 
 .card {
@@ -462,6 +461,7 @@ button {
 }
 
 .review{
+    border-top: none;
     text-align: center;
     margin: 20px;
 }
@@ -599,7 +599,6 @@ button {
     max-width: 1140px;
     margin: 4rem auto 3rem;
     padding: 3rem 1.5rem;
-    border-top: 1px solid #e6ebf1;
     display: flex;
     gap: 2.5rem;
 }
@@ -670,7 +669,6 @@ button {
 
     .second {
         border-left: none;
-        border-top: 1px solid #e6ebf1;
         padding: 1.5rem 0 0;
     }
 }
@@ -679,7 +677,6 @@ button {
 /* Site Footer */
 .footer {
     background-color: #f6f9fc;
-    border-top: 1px solid #e6ebf1;
     padding: 4rem 1.5rem 3rem;
     color: #425466;
 }
@@ -739,8 +736,6 @@ button {
 
 /* Newsletter Section */
 .footer-newsletter {
-    border-top: 1px solid #e6ebf1;
-    border-bottom: 1px solid #e6ebf1;
     padding: 2rem 0;
 }
 
