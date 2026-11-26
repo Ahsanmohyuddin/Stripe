@@ -52,7 +52,7 @@ body {
 }
 
 .nav-part-2 ul a:hover {
-    color: #635bff;
+    color: lightblue;
 }
 
 
@@ -67,13 +67,13 @@ button {
 }
 
 .btn1 {
-    background-color: rgba(10, 37, 64, 0.06);
-    color: #0a2540;
+    background-color: white;
+    color: orange;
     margin-left: auto;
 }
 
 .btn1:hover {
-    background-color: rgba(10, 37, 64, 0.12);
+    background-color: lightblue;
 }
 
 .btn2,
